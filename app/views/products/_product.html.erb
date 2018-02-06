@@ -1,12 +1,14 @@
-<div class="product">
-  <ul>
-    <li><%= link_to item.name, product_path(item) %></li>
-    <li><%= item.description %></li>
-    <li><%= item.price %></li>  
-  </ul>
-  
-  <p>
-    <%= link_to "Edit", edit_product_path(item) %>
-    <%= link_to "Delete", product_path(item), method: :delete %>
-  </p>
+<div class="actions col-md-8 col-md-offset-2">
+  <div class="product">
+      <h2><%= link_to item.name, product_path(item) %></h2>
+    <ul>
+      <li><%= item.description %></li>
+      <li><%= item.price %></li>  
+    </ul>
+    
+    <p>
+      <%= link_to "Edit", edit_product_path(item) %>
+      <%= link_to "Delete", product_path(item), method: :delete %>
+    </p>
+  </div>    
 </div>
