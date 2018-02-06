@@ -4,45 +4,17 @@ class ProductsController < ApplicationController
     @products = Product.order("updated_at DESC")
   end
   
-  def new
-    @product = Product.new
+  def show
+    @product = Product.where(id: params[:id]).first
   end
   
   def create
     @product = Product.new(product_params)
     
     if @product.save
-      redirect_to products_path
+      redirect_to admin_products_path
     else
       render :new
-    end
-  end
-  
-  def show
-    @product = Product.where(id: params[:id]).first
-  end
-  
-  def edit
-    @product = Product.where(id: params[:id]).first
-  end
-  
-  def update
-    @product = Product.where(id: params[:id]).first
-    
-    if @product.update_attributes(product_params)
-      redirect_to products_path
-    else
-      render :update
-    end
-  end
-  
-  def destroy
-    @product = Product.where(id: params[:id]).first
-    
-    if @product.destroy
-      redirect_to products_path
-    else
-      render :update
     end
   end
   
