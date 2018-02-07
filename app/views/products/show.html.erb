@@ -1,9 +1,9 @@
-<h1>
-  <%= @product.name %>
-</h1>
-<h1>
-  <%= @product.description %>
-</h1>
-<h1>
-  <%= @product.price %>
-</h1>
+<ul>
+  <li>description: <%= @product.description %></li>
+  <li>price: <%= @product.price %></li>  
+  <li>currency: <%= @product.currency %></li>
+  <li>start time: <%= @product.start_time %></li>
+  <li>start time zone: <%= @product.start_zone %></li>
+  <li>end time:<%= @product.end_time %></li>
+  <li>end time zone: <%= @product.end_zone %></li>
+</ul>
