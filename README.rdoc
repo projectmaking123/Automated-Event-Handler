@@ -9,3 +9,5 @@
 * admin@test.com, password: test1234
 
 * user@test.com, password: test1234
+
+site url http://event-machine2018.herokuapp.com/
