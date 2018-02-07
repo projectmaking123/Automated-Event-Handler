@@ -12,6 +12,26 @@
     <%= f.text_field :price, class: 'form-control' %>
   </div>
   <div class='form-group'>
+    <%= f.label :currency %>
+    <%= f.text_field :currency, value: "USD", class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :start_time %>
+    <%= f.datetime_field :start_time, value: "2018-02-07T13:00:00Z", class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :start_zone %>
+    <%= f.text_field :start_zone, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :end_time %>
+    <%= f.datetime_field :end_time, value: "2018-02-07T14:00:00Z", class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :end_zone %>
+    <%= f.text_field :end_zone, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
     <%= f.submit "Save",  class: 'btn btn-block btn-success' %>
   </div>
 <% end %>

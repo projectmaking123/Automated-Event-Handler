@@ -1,9 +1,16 @@
 <div class="actions col-md-8 col-md-offset-2">
   <div class="product">
-      <h2><%= link_to item.name, product_path(item) %></h2>
+      <h2>Name: <%= link_to item.name, product_path(item) %></h2>
     <ul>
-      <li><%= item.description %></li>
-      <li><%= item.price %></li>  
+      <ul>
+        <li>description: <%= item.description %></li>
+        <li>price: <%= item.price %></li>  
+        <li>currency: <%= item.currency %></li>
+        <li>start time: <%= item.start_time %></li>
+        <li>start time zone: <%= item.start_zone %></li>
+        <li>end time:<%= item.end_time %></li>
+        <li>end time zone: <%= item.end_zone %></li>
+      </ul>
     </ul>
   </div>    
 </div>

@@ -1,28 +1,11 @@
-== README
+# Welcome
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* the plan to create the set interval background work is to have heroku's Scheduler to run the rake task every hour, however there seems to be problems with making the api call to eventbrite's api
 
-Things you may want to cover:
+* Admin page can be reached by clicking on your email in the nav bar
 
-* Ruby version
+# Users
 
-* System dependencies
+* admin@test.com, password: test1234
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* user@test.com, password: test1234
