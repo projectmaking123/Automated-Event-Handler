@@ -11,3 +11,17 @@
 * user@test.com, password: test1234
 
 site url http://event-machine2018.herokuapp.com/
+
+# Api List
+
+* https://www.eventbrite.com/developer/v3/endpoints/events/
+
+* http://dev.ticketleap.com/doc/organization-events-list.html
+
+* http://developer.eventzilla.net/docs/
+
+* https://www.meetup.com/meetup_api/docs/2/event/#create
+
+* https://github.com/xing/xing_api 
+
+* https://developer.picatic.com/
